@@ -1,0 +1,18 @@
+DEPENDENCIES
+  mysql-multi (= 1.4.2)
+
+GRAPH
+  apt (2.7.0)
+  chef-sugar (3.1.0)
+  mysql (5.6.3)
+    yum-mysql-community (>= 0.0.0)
+  mysql-multi (1.4.2)
+    apt (>= 0.0.0)
+    chef-sugar (>= 0.0.0)
+    mysql (~> 5.0)
+    openssl (>= 0.0.0)
+  openssl (4.1.1)
+    chef-sugar (>= 0.0.0)
+  yum (3.6.1)
+  yum-mysql-community (0.1.17)
+    yum (>= 3.0)

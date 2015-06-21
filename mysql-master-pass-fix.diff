@@ -1,0 +1,4 @@
+23c23
+< node.set_unless['mysql-multi']['server_repl_password'] = secure_password
+---
+> #node.set_unless['mysql-multi']['server_repl_password'] = secure_password

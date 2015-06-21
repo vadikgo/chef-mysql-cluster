@@ -1,0 +1,11 @@
+{
+    "name": "mysql-master",
+    "description": "MySQL Master role",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "run_list": [
+        "recipe[mysql-multi::default]",
+        "recipe[mysql-multi::mysql_master]",
+        "recipe[op::clint]"
+    ]
+}

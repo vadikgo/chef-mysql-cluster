@@ -1,0 +1,4 @@
+46c46
+< node.set_unless['mysql-multi']['bind_ip'] = best_ip_for(node)
+---
+> #node.set_unless['mysql-multi']['bind_ip'] = best_ip_for(node)

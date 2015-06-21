@@ -1,0 +1,25 @@
+{
+    "name": "production",
+    "description": "Production environment",
+    "chef_type": "environment",
+    "json_class": "Chef::Environment",
+    "default_attributes": {
+        "mysql": { 
+            "server_root_password": "abc123",
+            "allow_remote_root": true,
+            "root_network_acl" : ["85.143.216.185", "85.143.216.249"]
+        },
+        "mysql-multi": {
+            "master": "85.143.216.185",
+            "slaves": ["85.143.216.185", "85.143.216.249"],
+            "slave_user": "replicant",
+            "server_repl_password": "abc123",
+            "bind_ip": "0.0.0.0"
+        },
+        "op": { 
+            "mysql_cl_ip": "192.168.2.10",
+            "mysql_master_ip": "85.143.216.185",
+            "mysql_slave_ip": "85.143.216.249"
+        }
+    }
+}
